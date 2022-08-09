@@ -1,6 +1,6 @@
 library(tidyverse)
 library(shiny)
-d = readr::read_csv(here::here("data/weather.csv"))
+d = readr::read_csv("G:\\My Drive\\Post-doc - non-project\\GitHub\\jw-get-started-shiny\\data\\weather.csv")
 
 d_vars = d %>%
   select(where(is.numeric)) %>%
